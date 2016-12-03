@@ -5,7 +5,7 @@
 
 int main()
 {
-	const auto srcFile = R"(D:\模糊判断调查\images\u-20151213-5d142666-489d-4309-a355-2bbdf45a701b.png)";
+	const auto srcFile = R"(D:\妯＄硦鍒ゆ柇璋冩煡\images\u-20151213-5d142666-489d-4309-a355-2bbdf45a701b.png)";
 	const auto srcImg = cv::imread(srcFile);
 	if (!srcImg.data)
 	{
@@ -24,7 +24,7 @@ int main()
 	while (true)
 	{
 		auto shImg = srcImg.clone();
-		paiter.putText(shImg, L"你好啊，我这里是中国上海学霸君！", cv::Point(x, 80), 255);
+		paiter.putText(shImg, L"鍛靛懙鍛碉紒", cv::Point(x, 80), 255);
 		cv::imshow("shImg", shImg);
 		cv::waitKey(10);
 		x-=3;
